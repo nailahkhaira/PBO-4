@@ -1,5 +1,5 @@
 // Child class
-class Transaksi extends Barang {
+class Transaksi extends Barang { //inheritance
     private String noFaktur;
     private int jumlahBeli;
 
@@ -12,7 +12,7 @@ class Transaksi extends Barang {
 
     // Method untuk menampilkan detail transaksi
     public void tampilkanDetail() {
-        double total = hitungTotal(jumlahBeli); // Menggunakan metode dari parent class
+        double total = hitungTotal(jumlahBeli); // Menggunakan metode dari parent class, inheritance juga
         System.out.println("\n--- Detail Transaksi ---");
         System.out.println("No Faktur    : " + noFaktur);
         System.out.println("Kode Barang  : " + kodeBarang);
